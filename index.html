@@ -1,71 +1,475 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Tungsten by EdenSG</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Tungsten</h1>
-        <p></p>
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Sonsie+One|Playfair+Display+SC:400,900|Righteous' rel='stylesheet' type='text/css'>
+	<script src="jquery-1.10.2.min.js"></script>
+	<script src="jquery.sticky-kit.min.js"></script>
+	<script src="jquery.windows.js"></script>
+	<script src="jquery.patternizer.js"></script>
+	<script src="scrollTo.min.js"></script>
+	<title>Tungsten</title>
+</head>
 
-        <p class="view"><a href="https://github.com/EdenSG/tungsten">View the Project on GitHub <small>EdenSG/tungsten</small></a></p>
+<body style="background:#1f1f1f;">
+	<nav id="side-nav">
+		<div>
+			<a href="#a">Home</a>
+			<br />
+			<a href="#b">Atomic Diagram</a>
+			<br />
+			<a href="#c">Position on Periodic Table</a>
+			<br />
+			<a href="#d">Properties</a>
+			<br />
+			<a href="#e">Ores and Extraction</a>
+			<br />
+			<a href="#f">Movement Map</a>
+			<br />
+			<a href="#g">Common Uses</a>
+			<br />
+			<a href="#h">Environmental Concerns</a>
+			<br />
+			<a href="#sources">Resources</a>
+		</div>
+	</nav>
+	<section class="window active" id="a">
+
+		<h2 class="landing">The Life and Times of</h4>
+			<!-- <article class="dirt-back"> -->
+			<h1 class="landing" data-pattern="debut_dark.png">&#160;Tungsten&#160;</h1>
+			<!-- </article> -->
+			<h2 class="landing" id="instructions">SCROLL DOWN</h4>
+	</section>
+	<section class="window" id="b">
+		<div id="br">
+			<object data="brDiagram.svg" type="image/svg+xml"></object>
+		</div>
+	</section>
+	<section class="window" id="c">
+		<div id="atomic-notation">
+			<div class="outer">
+				<div id="inner">
+					<p>74</p>
+					<h4>W</h2>
+						<p class="mass">183.84</p>
+				</div>
+			</div>
+		</div>
+		<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td class="nonmetal">H</td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="noble">He</td>
+			</tr>
+			<tr>
+				<td class="alkali">Li</td>
+				<td class="earth">Be</td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="metalloid">B</td>
+				<td class="nonmetal">C</td>
+				<td class="nonmetal">N</td>
+				<td class="nonmetal">O</td>
+				<td class="nonmetal">F</td>
+				<td class="noble">Ne</td>
+			</tr>
+			<tr>
+				<td class="alkali">Na</td>
+				<td class="earth">Mg</td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="blank"></td>
+				<td class="poor">Al</td>
+				<td class="metalloid">Si</td>
+				<td class="nonmetal">P</td>
+				<td class="nonmetal">S</td>
+				<td class="nonmetal">Cl</td>
+				<td class="noble">Ar</td>
+			</tr>
+			<tr>
+				<td class="alkali">K</td>
+				<td class="earth">Ca</td>
+				<td class="transition">Sc</td>
+				<td class="transition">Ti</td>
+				<td class="transition">V</td>
+				<td class="transition">Cr</td>
+				<td class="transition">Mn</td>
+				<td class="transition">Fe</td>
+				<td class="transition">Co</td>
+				<td class="transition">Ni</td>
+				<td class="transition">Cu</td>
+				<td class="transition">Zn</td>
+				<td class="poor">Ga</td>
+				<td class="metalloid">Ge</td>
+				<td class="metalloid">As</td>
+				<td class="nonmetal">Se</td>
+				<td class="nonmetal">Br</td>
+				<td class="noble">Kr</td>
+			</tr>
+			<tr>
+				<td class="alkali">Rb</td>
+				<td class="earth">Sr</td>
+				<td class="transition">Y</td>
+				<td class="transition">Zr</td>
+				<td class="transition">Nb</td>
+				<td class="transition">Mo</td>
+				<td class="transition">Tc</td>
+				<td class="transition">Ru</td>
+				<td class="transition">Rh</td>
+				<td class="transition">Pd</td>
+				<td class="transition">Ag</td>
+				<td class="transition">Cd</td>
+				<td class="poor">In</td>
+				<td class="poor">Sn</td>
+				<td class="metalloid">Sb</td>
+				<td class="metalloid">Te</td>
+				<td class="nonmetal">I</td>
+				<td class="noble">Xe</td>
+			</tr>
+			<tr>
+				<td class="alkali">Cs</td>
+				<td class="earth">Ba</td>
+				<td class="transition">Lu</td>
+				<td class="transition">Hf</td>
+				<td class="transition">Ta</td>
+				<td class="blank"></td>
+				<td class="transition">Re</td>
+				<td class="transition">Os</td>
+				<td class="transition">Ir</td>
+				<td class="transition">Pt</td>
+				<td class="transition">Au</td>
+				<td class="transition">Hg</td>
+				<td class="poor">Tl</td>
+				<td class="poor">Pb</td>
+				<td class="poor">Bi</td>
+				<td class="poor">Po</td>
+				<td class="metalloid">At</td>
+				<td class="noble">Rn</td>
+			</tr>
+		</table>
+		<div class="below-ptable"></div>
+	</section>
+	<section class="window" id="d">
+		<h3 class="patternizer" data-pattern="binding_dark.png">&#160;Properties of Tungsten&#160;</h3>
+		<div class="half">
+			<ul>
+				<li>Name: <b>Tungsten</b>
+				</li>
+				<li>Symbol: <b>W</b>
+				</li>
+				<li>Atomic Number: <b>74</b>
+				</li>
+				<li>Atomic Wight: <b>183.84</b> (1)</li>
+				<li>State at
+					<dfn title="21&#186;C">294.2 K</dfn>: <b>Solid</b>
+				</li>
+				<li>Group: <b>6</b>: Transition Metals</li>
+				<li>Period: <b>6</b>: D-Block</li>
+				<li>Colour: <b>Greyish white, Lustrous</b>
+				</li>
+				<li>Classification: <b>Metallic</b>
+				</li>
+				<li>Melting Point: <b><dfn title="3422&#186;C">3695 K</dfn></b>
+				</li>
+				<li>Boiling Point: <b><dfn title="5555&#186;C">5828 K</dfn></b>
+				</li>
+				<li>Solid Density: <b>19.25 g/cm<sup>3</sup></b>
+				</li>
+				<br/>
+				<li>Number of Protons/Electrons: <b>74</b>
+				</li>
+				<li>Number of Neutrons: <b>110</b>
+				</li>
+				<br>
+				<li><b>Isotope	Half Lifes</b>
+				</li>
+				<table>
+					<tr>
+						<td>Isotope</td>
+						<td>Atomic mass (ma/u)</td>
+						<td>Natural abundance (atom %)</td>
+						<td>Nuclear spin (I)</td>
+						<td>Magnetic moment (&#956;/&#956;N)</td>
+					</tr>
+					<tr>
+						<td>180W</td>
+						<td>179.946701 (5)</td>
+						<td>0.12 (1)</td>
+						<td>0</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>182W</td>
+						<td>181.948202 (3)</td>
+						<td>26.50 (16)</td>
+						<td>0</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>183W</td>
+						<td>182.950220 (3)</td>
+						<td>14.31 (4)</td>
+						<td>1/2</td>
+						<td>0.1177847</td>
+					</tr>
+					<tr>
+						<td>
+							<span style="font-weight:400">184W</span>
+						</td>
+						<td>
+							<span style="font-weight:400">183.950928</span>(3)
+						</td>
+						<td>
+							<span style="font-weight:400">30.64</span>(2)
+						</td>
+						<td>
+							<span style="font-weight:400">0</span>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>186W</td>
+						<td>185.954357 (4)</td>
+						<td>28.43 (19)</td>
+						<td>0</td>
+						<td></td>
+					</tr>
+				</table>
+				<br />
+				<li>Discovered by <b>Fausto</b> &amp; <b>Juan Jose de Elhuyar</b> in <b>1783</b> in <b>Spain</b>
+				</li>
+				<li>Origin of name: From Swedish <i style="font-weight:400">Tung Sten</i> meaning <b>Heavy Stone</b> 
+				</li>
+				<li>Origin of symbol: From German <i style="font-weight:400">Wolfram</i> meaning <b>Tungsten</b> 
+				</li>
+				<br />
+				<li><b>Interesting facts</b>
+				</li>
+				<li>
+					<span style="font-weight:400">W</span>has the highest melting point of any element (carbon sublimes, so it isn’t considered to have a melting point)</li>
+				<li>
+					<span style="font-weight:400">W</span>is harder than steel in its pure form
+				</li>
+				<li>In 2009,
+					<span style="font-weight:400">China</span>produced more than 80% of world Tungsten concentrates
+				</li>
+				<li>
+					<span style="font-weight:400">W</span>is the heaviest element to be biologically useful (functional)
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section id="d-behind"></section>
+	<section class="window" id="e">
+		<h3>&#160;Ores and Extraction&#160;</h3>
+		<div>
+			<h4>Mining</h4>
+			<p>Wolframite, named for its high Tungsten content (Tungsten is <b>Wolfram</b> in German), is in an intermediate, between Huebnerite and Ferberite, and so not scientifically classified as a mineral species by the
+				<dfn title="International Mineralogical Association">IMA</dfn>.
+			</p>
+			<p>Scheelite was named in 1821 by Karl Caesar von Leonhard in honor of Karl Wilhelm Scheele, a Swedish Pomeranian pharmaceutical chemist who discovered Oxygen, Chlorine, Manganese, and Tungsten.</p>
+			<p>Wolframite and Scheelite mines are usually underground. The minerals are often found in short, narrow veins, and so mines do not produce large amounts of ore (usually less than 2000 tons per day). Because most Tungsten ores contain less than 1.5% Tungsten, dressing plants (where waste material is removed) are usually located close to the mine to reduce transport costs.</p>
+			<p>Scheelite can be concentrated gravimetrically (using differences in density and mass), and by froth flotation (separating hydrophobic and hydrophilic materials — the ore is ground to grains, water is added to form a slurry, and hydrophobic chemicals are added that adhere to the desired material. The slurry is then aerated, and the hydrophobic chemicals (with the desired materials in tow) attach to the bubbles and rise to the surface). Wolframite is concentrated with gravity (spirals, cones, tables), and sometimes magnetically as well. The Tungsten oxide from this concentrate is then heated to between 550ºC to 850ºC in a stream of hydrogen to form metallic Tungsten powder, which is made into billets through mechanical pressure.</p>
+		</div>
+		<figure>
+			<img src="Scheelite1.jpg" alt="">
+			<figcaption>
+				<span><b>Scheelite</b> found in China
+				</span>
+			</figcaption>
+		</figure>
+		<figure>
+			<img src="Wolframite1.jpg" alt="">
+			<figcaption>
+				<span><b>Wolframite</b> found in China
+				</span>
+			</figcaption>
+		</figure>
+		<figure>
+			<img src="wolframiteMining.jpg" alt="">
+			<figcaption>
+				<span><b>Wolframite</b> mining in the Democratic Republic of Congo
+				</span>
+			</figcaption>
+		</figure>
+		<figure id="info">
+			<img src="tungsten-pure.jpg" alt="">
+			<figcaption>
+				<span>Tungsten rods with evaporated crystals, partially oxidized with colourful tarnish
+				</span>
+			</figcaption>
+		</figure>
+	</section>
+	<section class="window" id="f">
+		<!-- Map goes here -->
+	</section>
+	<section class="window" id="g">
+		<h3 class="patternizer" data-pattern="debut_dark.png">&#160;Common Uses&#160;</h3>
+		<article>
+			<p>More than half of the world's Tungsten is used in cemented carbides, namely Tungsten carbide. Tungsten Carbide (WC) is used for machining and manufacturing tools, in World War II for armour-piercing ammunition, and for various athletic objects and high-quality surgical tools. Tungsten Carbide has about two times the stiffness of steel, and just under two times the density. It is less dense than pure W, but is much stiffer and more durable.</p>
+			<p>Pure Tungsten is used electrically because of its high melting point. Incandescent lightbulb filaments are made almost exclusively of Tungsten, having replaced Carbon filaments in 1904.</p>
+			<p><b>WC</b> - Tungsten carbide, used for machining tools and armour-piercing ammunition because of its very high hardness and density</p>
+			<p><b>WS<sub>2</sub></b> - Tungsten disulfide, used as li-ion battery anodes, and as a dry lubricant</p>
+			<p><b>HSS</b> - High speed steel contains about 18% Tungsten, used because it adds hardness and temperature resistivity</p>
+		</article>
+		<figure class="one-one">
+			<img src="Electric_bulb_filament.jpg" alt="">
+			<figcaption>
+				<span><b>Tungsten</b> is used in lightbulbs because of its high melting point and good conductivity.</span>
+			</figcaption>
+		</figure>
+		<figure class="one-two">
+			<img src="WC.jpg" alt="">
+			<figcaption>
+				<span><b>Tungsten Carbide</b> router bits</span>
+			</figcaption>
+		</figure>
+		<figure class="one-one">
+			<img src="WC-inserts.jpg" alt="">
+			<figcaption>
+				<span><b>Tungsten Carbide</b> inserts</span>
+			</figcaption>
+		</figure>
+	</section>
+	<section class="window" id="h">
+		<h3>Environmetal Concerns</h3>
+		<p>In 2009, it was found that certain forms of Tungsten can move easily through soil and groundwater, unlike previously thought. Tungstate anions can be biologically harmful &#8212; Tungsten sometimes replaces molybdenum in enzymes, rendering them inactive. Tungsten has been used to make &#8220;green bullets&#8221; instead of lead because of its low reactivity, relatively low toxicity, and high density and strength, but recent studies suggest that these &#8220;green&#8221; ammunition isn&#8217;t actually much better ecologically than lead.</p>
+		<p>As well, it is very likely that there will be a worldwide scarcity of Tungsten by 2030. Tungsten is essential for today’s industries, but it is a
+			<abbr title="Nonrenewable Natural Resource">NNR</abbr>, and we will likely exaust the earth of it fairly soon. That said, Tungsten is recyclable and can be extracted from its applications; it will become increasingly necessary to recycle the metal.</p>
+		<figure>
+			<img src="tungsten_mine.jpg" alt="">
+			<figcaption>
+				<span>Processing works of Pine Creek Tungsten Mine (also vanadium), at about 9000ft above Rovana, Inyo County CA. Mine shafts mainly high up in valley toward Morgan Pass, but some up Pine Creek. Important during World War II and still some active Tungsten extraction into the 2000's, but now closed. View down from Pine Creek Pass trail.</span>
+			</figcaption>
+		</figure>
+	</section>
+	<section class="window" id="sources">
+		<h3>Resources</h3>
+		<ul>
+			<li>Images from <a href="http://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a>
+			</li>
+			<li><a href="http://www.rleonardi.com/interactive-resume/">Robby Leonardi's resume</a> was a great inspiration
+			</li>
+			<li><a href="http://www.google.com/fonts/#UsePlace:use/Collection:Lato:100,300,400,700,900|Sonsie+One|Playfair+Display+SC:400,900|Righteous">Google Fonts</a> Used in this project
+			</li>
+			<li><a href="http://www.webelements.com/tungsten/">WebElements</a> provided a great amount of basic facts
+			</li>
+			<li><a href="http://www.mi-techmetals.com/history-tungsten.htm">Mi-Tech Metals - History of Tungsten</a>
+			</li>
+			<li><a href="http://www.minerals.net/mineral/wolframite.aspx">Wolframite: The mineral wolframite information and pictures</a>
+			</li>
+			<li><a href="http://act-metals.blogspot.ca/2013/03/the-extraction-process-of-tungsten.html">Extraction of Metals: The extraction process of tungsten</a>
+			</li>
+			<li><a href="http://www.itia.info/tungsten-primary-uses.html">Primary Uses of Tungsten | International Tungsten Industry Association (ITIA)</a>
+			</li>
+			<li><a href="http://wanttoknowit.com/uses-of-tungsten/">Uses of Tungsten</a>
+			</li>
+			<li><a href="https://www.stevens.edu/news/content/environmental-effects-tungsten-damage-mitigation-and-green-alternatives">Environmental Effects of Tungsten: Damage Mitigation and Green Alternatives | Stevens News</a>
+			</li>
+			<li><a href="http://www.news-medical.net/news/2009/01/19/45160.aspx">Health and environmental hazards of tungsten</a>
+			</li>
+			<li><a href="http://www.acs.org/content/acs/en/pressroom/presspacs/2011/acs-presspac-june-1-2011/tungsten-may-not-be-the-best-shot-for-making-green-bullet.html#maincontent">Tungsten may not be the best shot for making &#39;green&#39; bullet</a>
+			</li>
+			<li><a href="http://www.azocleantech.com/news.aspx?newsID=4413">Tungsten, Previously Thought Safe Is Now Raising Health and Environmental Concerns</a>
+			</li>
+			<li><a href="https://tulane.edu/sse/eens/news/tungsten-toxic.cfm">Tulane University - Department of Earth and Environmental Sciences - News</a>
+			</li>
+			<li><a href="http://environmentalchemistry.com/yogi/periodic/W.html">Periodic Table of Elements: Tungsten - W (EnvironmentalChemistry.com)</a>
+			</li>
+			<li><a href="http://pubs.acs.org/doi/full/10.1021/jz300480w">The Journal of Physical Chemistry Letters - Synthesis of Surface-Functionalized WS2 Nanosheets and Performance as Li-Ion Battery Anodes (ACS Publications)</a>
+			</li>
+			<li><a href="https://en.wikipedia.org/wiki/High_speed_steel">High-speed steel - Wikipedia, the free encyclopedia</a>
+			</li>
+			<li><a href="http://www.efunda.com/materials/alloys/tool_steels/show_tool.cfm?ID=AISI_T1&amp;prop=all&amp;Page_Title=AISI%20T1">eFunda: Properties of Tool Steel AISI T1</a>
+			</li>
+			<li><a href="https://en.wikipedia.org/wiki/Tungsten_compounds#Alloys">Tungsten - Wikipedia, the free encyclopedia</a>
+			</li>
+			<li><a href="http://minerals.usgs.gov/minerals/pubs/commodity/tungsten/myb1-2009-tungs.pdf">minerals.usgs.gov/minerals/pubs/commodity/tungsten/myb1-2009-tungs.pdf</a>
+			</li>
+			<li><a href="http://www.theoildrum.com/node/6345">The Oil Drum | Increasing Global Nonrenewable Natural Resource Scarcity&mdash;An Analysis</a>
+			</li>
+			<li><a href="http://www.clean.cise.columbia.edu/msds/tungsten.pdf">www.clean.cise.columbia.edu/msds/tungsten.pdf</a>
+			</li>
+			<li><a href="https://en.wikipedia.org/wiki/File:Wolfram_evaporated_crystals_and_1cm3_cube.jpg">File:Wolfram evaporated crystals and 1cm3 cube.jpg - Wikipedia, the free encyclopedia</a>
+			</li>
+			<li><a href="http://www.itia.info/history.html">History of Tungsten | International Tungsten Industry Association (ITIA)</a>
+			</li>
+			<li><a href="http://www.tungsten-corp.com/tungsten/production">Tungsten Corp.</a>
+			</li>
+			<li><a href="http://www.chem.mtu.edu/chem_eng/faculty/kawatra/Flotation_Fundamentals.pdf">www.chem.mtu.edu/chem_eng/faculty/kawatra/Flotation_Fundamentals.pdf</a>
+			</li>
+			<li><a href="http://www.britannica.com/EBchecked/topic/609110/tungsten-processing/82033/Tungsten-powder">tungsten processing :: Tungsten powder -- Encyclopedia Britannica</a>
+			</li>
+			<li><a href="http://www.mindat.org/min-3560.html">Scheelite: Scheelite mineral information and data.</a>
+			</li>
+			<li><a href="http://www.britannica.com/EBchecked/topic/527125/Carl-Wilhelm-Scheele">Carl Wilhelm Scheele (Swedish chemist) -- Encyclopedia Britannica</a>
+			</li>
+		</ul>
+	</section>
+</body>
+<script>
+$(document).ready(function() {
+	// $("body").onepage_scroll({});
+
+	$('.window').windows({
+		snapping: true,
+		snapSpeed: 500,
+		snapInterval: 1100,
+		onScroll: function(scrollPos) {
+			// scrollPos:Number
+		},
+		onSnapComplete: function($el) {
+			// after window ($el) snaps into place
+		},
+		onWindowEnter: function($el) {
+			// when new window ($el) enters viewport
+		}
+	});
 
 
-        <ul>
-          <li><a href="https://github.com/EdenSG/tungsten/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/EdenSG/tungsten/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/EdenSG/tungsten">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+	// $('body').panelSnap();
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+	$("#atomic-notation div.outer").stick_in_parent();
+	$("h1.landing, .patternizer").patternizer();
+	$('nav a').scrollTo();
+	
+	$(window).scroll(function() {
+		$('.window').removeClass("active");
+		$('.window').getCurrentWindow().addClass("active");
+	});
+});
+</script>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/EdenSG">EdenSG</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
 </html>
