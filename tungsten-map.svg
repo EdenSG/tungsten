@@ -22,7 +22,9 @@
     sodipodi:docname="tungsten-map.svg"
     version="1.0">
 <style>
+  text {font-family:'Lato';font-weight:100;}
    @font-face {
+  }
   font-family: 'Lato';
   font-style: normal;
   font-weight: 100;
