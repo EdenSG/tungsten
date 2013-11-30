@@ -1,6 +1,13 @@
 <?xml version="1.0" standalone="no" ?>
 <!DOCTYPE svg>
-<svg version="1.1" baseProfile="full" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" zoomAndPan="magnify" id="Electron shell Tungsten" viewBox="-1000 -1150 2000 2150" width="800" height="860"><style>text {font-weight:100;font-family:'Lato'}</style>
+<svg version="1.1" baseProfile="full" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" zoomAndPan="magnify" id="Electron shell Tungsten" viewBox="-1000 -1150 2000 2150" width="800" height="860">
+	<style>
+	text {
+		font-weight:100;
+		font-family:'Lato';
+	}
+	@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+	</style>
     <defs>
         <circle id="electron" fill="#333333" stroke="none" r="30" />
     </defs>
