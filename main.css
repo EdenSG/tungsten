@@ -17,7 +17,7 @@ section {
 	transition: all 0.5s ease;
 	z-index: 15;
 	margin: 0;
-	box-shadow: 0 2px 12px -7px #000 inset;
+	box-shadow: 0 2px 12px -7px #000 inset, 0 0 0 1000px rgba(0,0,0,0.3) inset;
 	position: relative;
 	overflow: hidden;
 	width: 100%;
@@ -28,6 +28,7 @@ section {
 }
 section.active {
 	opacity: 1;
+	box-shadow: 0 2px 12px -7px #000 inset, 0 0 0 0 rgba(255,255,255,0.3) inset;
 }
 nav {
 	position: fixed;
